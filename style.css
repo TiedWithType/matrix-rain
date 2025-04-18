@@ -1,0 +1,82 @@
+html,
+body {
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ font-family: sans;
+
+ @media (prefers-color-scheme: light) {
+  color: #212121;
+  background: #fff;
+ }
+
+ @media (prefers-color-scheme: dark) {
+  color: #fff;
+  background: #212121;
+ }
+}
+
+#matrix {
+ position: fixed;
+ top: 0;
+ left: 0;
+ display: block;
+ z-index: 0;
+}
+
+#toggleSettings {
+ position: fixed;
+ bottom: 10px;
+ left: 10px;
+ z-index: 2;
+ color: inherit;
+ background: inherit;
+ border: none;
+ padding: 10px 15px;
+ font-weight: bold;
+ cursor: pointer;
+ border-radius: 5px;
+ opacity: 0.5;
+}
+
+dialog {
+ color: inherit;
+ background: inherit;
+ opacity: 0.7;
+ border: none;
+ border-radius: 8px;
+ padding: 20px;
+ font-size: 14px;
+ z-index: 3;
+}
+
+dialog form label {
+ display: block;
+ margin-bottom: 10px;
+}
+
+dialog form input[type='range'],
+dialog form input[type='color'] {
+ width: 100%;
+}
+
+dialog::backdrop {
+ background: rgba(0, 0, 0, 0.5);
+}
+
+#importFile {
+ display: none;
+}
+
+menu {
+ display: flex;
+ gap: 10px;
+ padding: 0;
+}
+
+menu button {
+ font-family: inherit;
+ border-radius: 0.25rem;
+ padding: 0.25rem 0.5rem;
+ border: 0;
+}

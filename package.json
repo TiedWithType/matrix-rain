@@ -1,0 +1,28 @@
+{
+ "name": "matrix-rain",
+ "version": "1.0.0",
+ "description": "matrix rain effect",
+ "keywords": [
+  "matrix",
+  "matrix-rain",
+  "matrix-effect"
+ ],
+ "homepage": "https://github.com/TiedWithType/matrix-rain#readme",
+ "bugs": {
+  "url": "https://github.com/TiedWithType/matrix-rain/issues"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/TiedWithType/matrix-rain.git"
+ },
+ "license": "ISC",
+ "author": "TiedWithType",
+ "type": "module",
+ "scripts": {
+  "start": "vite --open",
+  "build": "vite"
+ },
+ "devDependencies": {
+  "vite": "^6.3.1"
+ }
+}

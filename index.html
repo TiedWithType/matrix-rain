@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.ts" type="module"></script>
+  <title>Matrix Rain</title>
+ </head>
+ <body>
+  <canvas id="matrix"></canvas>
+  <button id="toggleSettings">&#9881;</button>
+
+  <dialog id="settingsDialog">
+   <form method="dialog">
+   
+    <label>Text
+    <input
+     type="color" id="textColor" value="#00ff00" />
+    </label>
+    
+    <label>Background
+    <input
+     type="color" id="bgColor" value="#000000" />
+    </label>
+
+    <label>Opacity
+    <input type="range" id="opacity"
+     min="1" max="100" value="5" />
+    </label>
+
+    <label>Speed
+    <input type="range" id="speed"
+     min="1" max="60" value="30" />
+    </label>
+
+    <menu>
+     <button id="exportSettings" type="button">
+     Export</button>
+     
+     <button id="importSettings" type="button">
+     Import</button>
+     
+     <button id="resetSettings" type="button">
+     Reset</button>
+     
+     <button id="closeSettings" value="cancel">
+     Close</button>
+     
+    </menu>
+   </form>
+  </dialog>
+
+  <input
+   type="file" id="importFile" accept=".json" />
+ </body>
+</html>
