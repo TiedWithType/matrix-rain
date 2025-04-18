@@ -20,7 +20,7 @@
  "type": "module",
  "scripts": {
   "start": "vite --open",
-  "build": "vite"
+  "build": "vite build"
  },
  "devDependencies": {
   "vite": "^6.3.1"
